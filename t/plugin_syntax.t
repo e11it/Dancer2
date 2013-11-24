@@ -67,6 +67,7 @@ subtest 'hooks in plugins' => sub {
     {
         use Dancer2;
         use t::lib::Hookee;
+	use t::lib::Empty;
 
         hook 'third_hook' => sub {
             var( hook => 'third hook' );
